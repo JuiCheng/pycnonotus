@@ -1,20 +1,20 @@
 <template>
   <div
-    class="relative z-10 min-h-[87px] w-screen bg-white shadow-[0_5px_5px_0px_rgba(0,0,0,0.25)] 2xl:h-screen 2xl:w-1/4"
+    class="relative z-10 min-h-[87px] w-screen bg-white shadow-[0_5px_5px_0px_rgba(0,0,0,0.25)] xl:h-screen xl:w-1/4"
   >
     <div class="flex items-center justify-around py-5">
       <div
-        class="hamburger flex h-[1.5rem] w-[1.5rem] cursor-pointer flex-col justify-between 2xl:hidden"
+        class="hamburger flex h-[1.5rem] w-[1.5rem] cursor-pointer flex-col justify-between xl:hidden"
         @click="toggleHamburger"
       >
         <HamburgerIcon :isHamburgerOpen="isHamburgerOpen"></HamburgerIcon>
       </div>
-      <h3 class="text-xl font-bold 2xl:mt-[4rem] 2xl:text-3xl">白頭翁不吃小米</h3>
+      <h3 class="text-xl font-bold xl:mt-[4rem] xl:text-3xl">白頭翁不吃小米</h3>
       <Logo />
     </div>
     <ul
       :class="[
-        'flex w-full flex-col items-center gap-3 bg-white transition-all duration-300 2xl:mt-20 2xl:max-h-fit 2xl:opacity-100',
+        'flex w-full flex-col items-center gap-3 bg-white transition-all duration-300 xl:mt-20 xl:max-h-fit xl:opacity-100',
         {
           'max-h-0 opacity-0': !isHamburgerOpen,
           'max-h-[200px] pb-[50px] opacity-100': isHamburgerOpen

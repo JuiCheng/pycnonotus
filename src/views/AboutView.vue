@@ -1,15 +1,16 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <main class="flex flex-col xl:min-h-screen xl:w-3/4">
+    <Banner :titleInfo="titleInfo"> </Banner>
+  </main>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+<script setup>
+import Banner from '../components/BannerComponent.vue'
+
+const titleInfo = {
+  ChineseName: '白頭翁',
+  EnglishName: '(Chinese bulbul)',
+  Caption: '又名白頭鵯。以果實、昆蟲為主食，無法消化小米、穀類。平均壽命約 8~10 年。',
+  BannerImage: '/background.png'
 }
-</style>
+</script>

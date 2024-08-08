@@ -1,8 +1,8 @@
 <template>
-  <main class="flex flex-col 2xl:min-h-screen 2xl:w-3/4">
+  <main class="flex flex-col xl:min-h-screen xl:w-3/4">
     <Banner :titleInfo="titleInfo"> </Banner>
     <div
-      class="flex min-h-fit w-full flex-col items-center gap-[50px] bg-[#dcccbc] py-[50px] 2xl:h-1/3 2xl:min-h-0 2xl:flex-row 2xl:items-start 2xl:justify-around 2xl:py-[60px]"
+      class="flex min-h-fit w-full flex-col items-center gap-[50px] bg-[#dcccbc] py-[50px] xl:h-1/3 xl:min-h-0 xl:flex-row xl:items-start xl:justify-around xl:py-[60px]"
     >
       <Intro
         v-for="(intro, index) in introList"
@@ -21,7 +21,8 @@ import Intro from '../components/IntroComponent.vue'
 const titleInfo = {
   ChineseName: '白頭翁',
   EnglishName: '(Chinese bulbul)',
-  Caption: '又名白頭鵯。以果實、昆蟲為主食，無法消化小米、穀類。平均壽命約 8~10 年。'
+  Caption: '又名白頭鵯。以果實、昆蟲為主食，無法消化小米、穀類。平均壽命約 8~10 年。',
+  BannerImage: '/background.png'
 }
 
 const introList = [

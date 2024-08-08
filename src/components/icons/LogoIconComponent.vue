@@ -55,7 +55,7 @@
 }
 
 /* RWD */
-@media (min-width: 1536px) {
+@media (min-width: 1280px) {
   .logo {
     position: absolute;
     top: 3rem;
